@@ -95,17 +95,19 @@ const App = () => {
         </div>
         <BrowserRouter>
           <Routes>
-            <Route exact path="/" element={<HomeNavigator />} basename={process.env.PUBLIC_URL}>
+            {/* <Route exact path="/" element={<HomeNavigator />}> */}
+            <Route exact path="/sumaco-app" element={<HomeNavigator />}>
+            {/* <Route exact path="/" element={<HomeNavigator />} basename={process.env.PUBLIC_URL}> */}
             </Route>
-            <Route path="/box" element={<BoxNavigator />}>
+            <Route path="/sumaco-app/box" element={<BoxNavigator />}>
             </Route>
-            <Route path="/mypage" element={<MyPageNavigator />}>
+            <Route path="/sumaco-app/mypage" element={<MyPageNavigator />}>
             </Route>
             <Route element={<NotFound />}>
             </Route>
           </Routes>
           <nav className={classes.navigation}>
-            <Link to="/">
+            <Link to="sumaco-app/">
             <div className={classes.icon} onClick={()=>{clickNav(1)}}>
               {selectNav === 1 
                 ? <HomeIcon sx={{ fontSize: 50, color: red[900] }}/>
@@ -114,7 +116,7 @@ const App = () => {
               
             </div>
             </Link>
-            <Link to="box">
+            <Link to="sumaco-app/box">
               <div className={classes.icon} onClick={()=>{clickNav(2)}}>
               {selectNav === 2
                 ? <Inventory2Icon sx={{ fontSize: 45, color: red[900] }}/>
@@ -122,7 +124,7 @@ const App = () => {
               }
               </div>
             </Link>
-            <Link to="mypage">
+            <Link to="sumaco-app/mypage">
               <div className={classes.icon} onClick={()=>{clickNav(3)}}>
               {selectNav === 3
                 ? <AccountBoxIcon sx={{ fontSize: 50, color: red[900] }}/>
