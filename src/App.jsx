@@ -96,8 +96,8 @@ const App = () => {
         <BrowserRouter>
           <Routes>
             {/* <Route exact path="/" element={<HomeNavigator />}> */}
-            <Route exact path="/sumaco-app" element={<HomeNavigator />}>
-            {/* <Route exact path="/" element={<HomeNavigator />} basename={process.env.PUBLIC_URL}> */}
+            {/* <Route exact path="/sumaco-app" element={<HomeNavigator />}> */}
+            <Route exact path="/sumaco-app" element={<HomeNavigator />} basename={process.env.PUBLIC_URL}>
             </Route>
             <Route path="/sumaco-app/box" element={<BoxNavigator />}>
             </Route>
