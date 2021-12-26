@@ -7,11 +7,8 @@ const useStyles = makeStyles((theme) => ({
         margin: "0 auto",
         alignItems: "center",
         height: "100%",
-        // height: "700px",
         width: "100%",
         flexDirection: 'column',
-        // justifyContent: "space-between",
-        
         backgroundColor: "#F0C75A",
         borderTop: "1px solid #aaa",
         borderBottom: "1px solid #aaa",
@@ -22,12 +19,23 @@ const useStyles = makeStyles((theme) => ({
         overflowY: "scroll",
     },
     topImagesCon: {
-        margin: "10px",
+
+    },
+    topImages: {
+        margin: "20px 10px",
         height: "340px",
         width: "340px",
         backgroundColor: "#fff",
         borderRadius: "8px",
-    }
+    },
+    newsCon: {
+        margin: "20px 10px",
+    },
+    line: {
+        width: "100%",
+        height: "5px",
+        borderBottom: "solid 1px #aaa",
+    },
   }));
 
 const HomeScreen = () => {
@@ -36,10 +44,27 @@ const HomeScreen = () => {
     return (
         <div className={classes.container}>
             <div className={classes.screen}>
-                home!
-                <div className={classes.topImagesCon}></div>
-                <div className={classes.topImagesCon}></div>
-                <div className={classes.topImagesCon}></div>
+                <div className={classes.topImagesCon}>
+                <div className={classes.topImages}></div> 
+                </div>
+                <div className={classes.newsCon}>
+                    <h2>お知らせ</h2>
+                    <div className={classes.line}></div>
+                    <li>
+                        <ul>
+                            <h3>お知らせ1</h3>
+                            <div className={classes.line}></div>
+                        </ul>
+                        <ul>
+                            <h3>お知らせ1</h3>
+                            <div className={classes.line}></div>
+                        </ul>
+                        <ul>
+                            <h3>お知らせ1</h3>
+                            <div className={classes.line}></div>
+                        </ul>
+                    </li>
+                </div>
             </div>
         </div>
     )

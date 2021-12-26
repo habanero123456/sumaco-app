@@ -10,7 +10,18 @@ body {
 #root {
   height: 100%;
 }
-
+h2 {
+  margin: 0;
+  color: #4f2200;
+  font-size: 20px;
+}
+h3 {
+  margin: 0;
+  font-size: 16px;
+}
+li {
+  list-style: none;
+}
 /* .App {
   text-align: center;
 }
