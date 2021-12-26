@@ -95,7 +95,7 @@ const App = () => {
         </div>
         <BrowserRouter>
           <Routes>
-            <Route exact path="/" element={<HomeNavigator />}>
+            <Route exact path="/" element={<HomeNavigator />} basename={process.env.PUBLIC_URL}>
             </Route>
             <Route path="/box" element={<BoxNavigator />}>
             </Route>
