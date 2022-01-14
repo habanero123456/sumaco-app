@@ -101,8 +101,8 @@ const App = () => {
           <Routes>
             {/* <Route exact path="/" element={<HomeNavigator />}> */}
             {/* <Route exact path="/sumaco-app" element={<HomeNavigator />}> */}
-            {/* <Route exact path="/sumaco-app" element={<HomeNavigator />} basename={process.env.PUBLIC_URL}> */}
-            <Route exact path="/" element={<HomeNavigator />} basename={process.env.PUBLIC_URL}>
+            <Route exact path="/sumaco-app" element={<HomeNavigator />} basename={process.env.PUBLIC_URL}>
+            {/* <Route exact path="/" element={<HomeNavigator />} basename={process.env.PUBLIC_URL}> */}
             </Route>
             {/* <Route path="/sumaco-app/box" element={<BoxNavigator />}> */}
             <Route path="/box" element={<BoxNavigator />}>
@@ -114,8 +114,8 @@ const App = () => {
             </Route>
           </Routes>
           <nav className={classes.navigation}>
-            {/* <Link to="sumaco-app/"> */}
-            <Link to="/">
+            <Link to="sumaco-app/">
+            {/* <Link to="/"> */}
             <div className={classes.icon} onClick={()=>{clickNav(1)}}>
               {selectNav === 1 
                 ? <HomeIcon sx={{ fontSize: 50, color: red[900] }}/>
