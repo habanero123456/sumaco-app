@@ -56,11 +56,11 @@ const HomeScreen = () => {
                             <div className={classes.line}></div>
                         </ul>
                         <ul>
-                            <h3>お知らせ1</h3>
+                            <h3>お知らせ2</h3>
                             <div className={classes.line}></div>
                         </ul>
                         <ul>
-                            <h3>お知らせ1</h3>
+                            <h3>お知らせ3</h3>
                             <div className={classes.line}></div>
                         </ul>
                     </li>
