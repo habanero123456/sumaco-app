@@ -15,6 +15,10 @@ import { BrowserRouter, Route, Routes, Link } from 'react-router-dom';
 
 export const BoxContext = createContext();
 
+// const sampleImages = [];
+// for (let i = 0; i < 14; i ++) {
+//   sampleImages[i] = [`${process.env.PUBLIC_URL}/images/piece${i}.png`];
+// }
 const useStyles = makeStyles((theme) => ({
   container: {
       display: 'flex',
@@ -30,12 +34,14 @@ const useStyles = makeStyles((theme) => ({
     width: "100%",
     display: 'flex',
     justifyContent: "space-between",
+    // alignItems: "center",
     height: "7.5%",
     // height: "60px",
   },
   logo: {
     fontSize: "40px",
     color: "white",
+    marginTop: "10px",
   },
   empty: {
     width: "60px",
@@ -58,7 +64,7 @@ const useStyles = makeStyles((theme) => ({
     width: "50px",
     height: "50px",
     paddingTop: "5px", 
-  }
+  },
 }));
 
 const ROUTER_BASENAME =

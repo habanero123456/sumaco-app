@@ -1,6 +1,11 @@
 import React from "react";
 import { makeStyles } from '@mui/styles';
 
+const sampleBoxes = [];
+for (let i = 0; i < 14; i ++) {
+    sampleBoxes[i] = {image: `${process.env.PUBLIC_URL}/images/piece${i}.png`, date: `2021/1/1${i} ${i}:15`};
+}
+
 const useStyles = makeStyles((theme) => ({
     container: {
         display: 'flex',
@@ -53,6 +58,11 @@ const useStyles = makeStyles((theme) => ({
         margin: "10px",
         alignSelf: "end",
     },
+    sampleImage: {
+        width: "260px",
+        height: "260px",
+        backgroundSize: "contain",
+      }
   }));
 
 const BoxScreen = () => {
@@ -64,18 +74,17 @@ const BoxScreen = () => {
                 <div className={classes.boxtabCon}>
 
                 </div>
-                <div className={classes.boxCon}>
-                    <div className={classes.box}>
-                        <div className={classes.boxtext}>箱内画像2</div>
-                    </div>
-                    <div className={classes.dateSt}>2021/12/25 15:22</div>
-                </div>
-                <div className={classes.boxCon}>
-                    <div className={classes.box}>
-                        <div className={classes.boxtext}>箱内画像2</div>
-                    </div>
-                    <div className={classes.dateSt}>2021/12/25 15:15</div>
-                </div>
+                {sampleBoxes.map((sampleBox) => {
+                    return (
+                        <div className={classes.boxCon}>
+                            <div className={classes.box}>
+                                <img className={classes.sampleImage} src={sampleBox.image} />
+                                {/* <div className={classes.boxtext}>箱内画像2</div> */}
+                            </div>
+                            <div className={classes.dateSt}>{sampleBox.date}</div>
+                        </div>
+                    )
+                })}
             </div>
         </div>
     )
