@@ -61,6 +61,9 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
+const ROUTER_BASENAME =
+  process.env.NODE_ENV === 'development' ? '/' : '/sumaco-app';
+
 const App = () => {
   const classes = useStyles();
   const [ boxes, setBoxes ] = useState();
@@ -93,7 +96,8 @@ const App = () => {
             <NotificationsIcon sx={{ fontSize: 45, color: grey[100] }} />
           </div>
         </div>
-        <BrowserRouter>
+        {/* <BrowserRouter basename={process.env.PUBLIC_URL}> */}
+        <BrowserRouter basename={ROUTER_BASENAME}>
           <Routes>
             {/* <Route exact path="/" element={<HomeNavigator />}> */}
             {/* <Route exact path="/sumaco-app" element={<HomeNavigator />}> */}
