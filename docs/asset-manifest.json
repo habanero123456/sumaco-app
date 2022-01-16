@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/sumaco-app/static/css/main.9027da7d.chunk.css",
+    "main.js": "/sumaco-app/static/js/main.c4b7ac8f.chunk.js",
+    "main.js.map": "/sumaco-app/static/js/main.c4b7ac8f.chunk.js.map",
+    "runtime-main.js": "/sumaco-app/static/js/runtime-main.e33c7a57.js",
+    "runtime-main.js.map": "/sumaco-app/static/js/runtime-main.e33c7a57.js.map",
+    "static/js/2.21672316.chunk.js": "/sumaco-app/static/js/2.21672316.chunk.js",
+    "static/js/2.21672316.chunk.js.map": "/sumaco-app/static/js/2.21672316.chunk.js.map",
+    "static/js/3.e73afe37.chunk.js": "/sumaco-app/static/js/3.e73afe37.chunk.js",
+    "static/js/3.e73afe37.chunk.js.map": "/sumaco-app/static/js/3.e73afe37.chunk.js.map",
+    "index.html": "/sumaco-app/index.html",
+    "static/css/main.9027da7d.chunk.css.map": "/sumaco-app/static/css/main.9027da7d.chunk.css.map",
+    "static/js/2.21672316.chunk.js.LICENSE.txt": "/sumaco-app/static/js/2.21672316.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e33c7a57.js",
+    "static/js/2.21672316.chunk.js",
+    "static/css/main.9027da7d.chunk.css",
+    "static/js/main.c4b7ac8f.chunk.js"
+  ]
+}
