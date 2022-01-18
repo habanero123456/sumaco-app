@@ -2,8 +2,8 @@ import React from "react";
 import { makeStyles } from '@mui/styles';
 
 const sampleBoxes = [];
-for (let i = 0; i < 14; i ++) {
-    sampleBoxes[i] = {image: `${process.env.PUBLIC_URL}/images/piece${i}.png`, date: `2021/1/1${i} ${i}:15`};
+for (let i = 1; i <= 3; i ++) {
+    sampleBoxes[i] = {image: `${process.env.PUBLIC_URL}/images/${i}.jpg`, date: `2021/1/1${i} ${i}:15`};
 }
 
 const useStyles = makeStyles((theme) => ({
@@ -59,9 +59,10 @@ const useStyles = makeStyles((theme) => ({
         alignSelf: "end",
     },
     sampleImage: {
-        width: "260px",
+        width: "300px",
         height: "260px",
         backgroundSize: "contain",
+        borderRadius: "8px",
       }
   }));
 
